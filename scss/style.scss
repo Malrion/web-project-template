@@ -1,0 +1,15 @@
+@import "reset.scss";
+
+$font-family: Roboto;
+$color1: #fff;
+$color2: #000;
+$color3: #f00;
+$font-size1: 12px;
+$font-size2: 18px;
+$font-size3: 28px;
+
+body {
+	background-color: $color1;
+	font-family: $font-family;
+	color: $color2;
+}
