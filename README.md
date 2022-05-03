@@ -18,5 +18,5 @@ To install the repository, you need
 
 Or install zip archive
 
-### Development
+## Development
 The project will be completed, as well as different versions of the structures and basic styles for the pages will be available soon
