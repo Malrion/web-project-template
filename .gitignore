@@ -2,3 +2,5 @@
 *.css.map
 *.sass.map
 *.scss.map
+reset.css
+reset.min.css
