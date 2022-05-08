@@ -25,6 +25,7 @@ brew install sass/sass/sass
 apt install ruby-sass
 ```
 For more information or other ways to contact us, visit the official website: https://sass-lang.com/install
+
 To install a repository, you need to
 * Git
 Or install zip archive
