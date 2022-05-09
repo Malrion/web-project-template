@@ -1,4 +1,4 @@
-# Web-Project-Template
+# Web Project Template
 This template has a finished design and basic layout of the home page, to start creating a page or site
 ## Getting Started
 To get started with the template, you need to install the repository on your device
