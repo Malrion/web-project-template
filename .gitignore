@@ -4,3 +4,4 @@
 *.scss.map
 reset.css
 reset.min.css
+.jshintrc
