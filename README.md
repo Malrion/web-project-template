@@ -3,7 +3,7 @@ This template has a finished design and basic layout of the home page, to start 
 ## Getting Started
 To get started with the template, you need to install the repository on your device
 ```
-git clone https://github.com/MRemushev/Web-Project-Template.git
+git clone https://github.com/MRemushev/web-project-template.git
 ```
 ## Prerequisites
 For proper operation, install the SASS compiler
