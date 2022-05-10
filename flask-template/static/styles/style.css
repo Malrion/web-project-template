@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-
 * {
   padding: 0px;
   margin: 0px;
@@ -10,7 +9,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :focus,
@@ -84,7 +83,7 @@ button,
 input[type="submit"] {
   display: inline-block;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background-color: transparent;
   background: none;
   cursor: pointer;
@@ -118,28 +117,27 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body header, body nav {
+  position: fixed;
 }
 
 header {
   width: 100%;
   background-color: #2b2b2b;
   -webkit-box-shadow: 0 1px 1px #e0e0e0;
-  box-shadow: 0 1px 1px #e0e0e0;
+          box-shadow: 0 1px 1px #e0e0e0;
   padding: 10px 30px;
   height: 80px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   top: -100px;
   text-align: center;
   margin: 0 auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-header .sticky {
-  position: fixed;
-  top: 0;
 }
 
 header .header-logo h1 {
@@ -185,42 +183,46 @@ header .header-links a:hover {
   border-bottom: 2px solid #e0e0e0;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 nav {
+  margin-top: 80px;
   display: inline-block;
+  background-color: #2b2b2b;
+  height: 92vh;
 }
 
 nav a {
   display: block;
   text-align: center;
-  background-color: #2b2b2b;
-  opacity: 0.7;
   padding: 12px 24px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 nav a:hover {
-  background-color: #2b2b2b;
-  opacity: 1;
+  background-color: #e0e0e0;
+  color: #2b2b2b;
 }
 
 nav a.active {
   background-color: #3777b7;
-  opacity: 1;
 }
 
 main {
   color: #2b2b2b;
-  padding: 20px 0 20px 20px;
+  padding: 100px 0 20px 150px;
   max-width: calc(100% - 150px);
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  z-index: 1;
   padding: 18px 28px;
   background-color: #2b2b2b;
 }
-
 /*# sourceMappingURL=style.css.map */

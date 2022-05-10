@@ -18,6 +18,9 @@ body
   display: flex
   flex-wrap: wrap
 
+  header, nav
+    position: fixed
+
 header
   width: 100%
   background-color: $color2
@@ -29,10 +32,6 @@ header
   text-align: center
   margin: 0 auto
   transition: 0.3s
-
-  .sticky
-    position: fixed
-    top: 0
 
   .header-logo
     h1
@@ -71,33 +70,37 @@ header
       &:hover
         border-bottom: 2px solid $color1
 
+.sticky
+  position: fixed
+  top: 0
+  width: 100%
+
 nav
+  margin-top: 80px
   display: inline-block
+  background-color: $color2
+  height: 92vh
 
   a
     display: block
     text-align: center
-    background-color: $color2
-    opacity: 0.7
     padding: 12px 24px
     transition: 0.25s
 
     &:hover
-      background-color: $color2
-      opacity: 1
+      background-color: $color1
+      color: $color2
 
     &.active
       background-color: $color3
-      opacity: 1
 
 main
   color: $color2
-  padding: 20px 0 20px 20px
+  padding: 100px 0 20px 150px
   max-width: calc(100% - 150px)
 
 footer
-  position: absolute
-  bottom: 0
   width: 100%
+  z-index: 1
   padding: 18px 28px
   background-color: $color2
