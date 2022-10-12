@@ -13,7 +13,7 @@ $font-size3: 28px;
 body {
 	background-color: $color1;
 	font-family: $font-family;
-	color: $color1;
+	color: $color2;
 	display: flex;
 	flex-wrap: wrap;
   header, nav {
@@ -49,7 +49,6 @@ header {
 	.header-title {
 		display: inline-block;
 		h2 {
-			float: center;
 			margin-left: 250px;
 			font-size: $font-size3;
 			font-weight: 500;
