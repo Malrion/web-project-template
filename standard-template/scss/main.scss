@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import '_vars.scss';
+@import '_reset.scss';
+
+body {
+	background-color: $color1;
+	font-family: $font-family;
+	color: $color2;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: $color2;
+	color: $color1;
+	padding: 10px 30px;
+	&__logo {
+		&-image {
+			float: left;
+			border-radius: 50%;
+			max-width: 60px;
+		}
+		&-name {
+			float: right;
+			font-size: $font-size3;
+			line-height: 2.1;
+			margin-left: 10px;
+			font-weight: 600;
+		}
+	}
+	&__title {
+		font-size: $font-size3;
+		font-weight: 500;
+	}
+	&__link {
+		font-size: $font-size2;
+		margin: 0 10px;
+		padding-bottom: 1px;
+		&:hover {
+			border-bottom: 2px solid $color1;
+		}
+	}
+}
+
+.container {
+	display: flex;
+}
+
+.sidebar {
+	background-color: $color2;
+	color: $color1;
+	min-height: calc(100vh - 173px);
+	&__item {
+		display: block;
+		text-align: center;
+		padding: 12px 24px;
+		transition: background-color 0.25s;
+		&:hover {
+			background-color: $color1;
+			color: $color2;
+		}
+		&_active {
+			background-color: $color3;
+		}
+	}
+}
+
+.content {
+	margin: 15px 20px;
+	min-height: 90vh;
+}
+
+.footer {
+	width: 100%;
+	padding: 18px 28px;
+	background-color: $color2;
+	color: $color1;
+}

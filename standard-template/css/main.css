@@ -110,98 +110,73 @@ body {
   background-color: #e0e0e0;
   font-family: Roboto;
   color: #2b2b2b;
-  display: flex;
-  flex-wrap: wrap;
-}
-body header, body nav {
-  position: fixed;
 }
 
-header {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: #2b2b2b;
-  box-shadow: 0 1px 1px #e0e0e0;
+  color: #e0e0e0;
   padding: 10px 30px;
-  height: 80px;
-  box-sizing: border-box;
-  top: -100px;
-  text-align: center;
-  margin: 0 auto;
-  transition: 0.3s;
 }
-header .header-logo h1 {
+.header__logo-image {
+  float: left;
+  border-radius: 50%;
+  max-width: 60px;
+}
+.header__logo-name {
+  float: right;
   font-size: 28px;
   line-height: 2.1;
   margin-left: 10px;
   font-weight: 600;
-  float: left;
 }
-header .header-logo img {
-  float: left;
-  padding: 0 5px;
-  max-width: 70px;
-}
-header .header-title {
-  display: inline-block;
-}
-header .header-title h2 {
-  margin-left: 250px;
+.header__title {
   font-size: 28px;
   font-weight: 500;
-  padding: 15px 5px;
 }
-header .header-links {
-  display: block;
+.header__link {
   font-size: 18px;
-  float: right;
+  margin: 0 10px;
+  padding-bottom: 1px;
 }
-header .header-links a {
-  display: inline-block;
-  margin: 20px 10px;
-  padding-bottom: 2px;
-  text-decoration: none;
-}
-header .header-links a:hover {
+.header__link:hover {
   border-bottom: 2px solid #e0e0e0;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.container {
+  display: flex;
 }
 
-nav {
-  margin-top: 80px;
-  display: inline-block;
+.sidebar {
   background-color: #2b2b2b;
-  height: 92vh;
+  color: #e0e0e0;
+  min-height: calc(100vh - 173px);
 }
-nav a {
+.sidebar__item {
   display: block;
   text-align: center;
   padding: 12px 24px;
-  transition: 0.25s;
+  transition: background-color 0.25s;
 }
-nav a:hover {
+.sidebar__item:hover {
   background-color: #e0e0e0;
   color: #2b2b2b;
 }
-nav a.active {
+.sidebar__item_active {
   background-color: #3777b7;
 }
 
-main {
-  color: #2b2b2b;
-  padding: 100px 0 20px 150px;
-  max-width: calc(100% - 150px);
+.content {
+  margin: 15px 20px;
+  min-height: 90vh;
 }
 
-footer {
+.footer {
   width: 100%;
-  z-index: 1;
   padding: 18px 28px;
   background-color: #2b2b2b;
-}
-
-/*# sourceMappingURL=main.css.map */
+  color: #e0e0e0;
+}/*# sourceMappingURL=main.css.map */
