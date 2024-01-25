@@ -17,13 +17,11 @@
 
 a,
 a:link,
-a:visited {
-	color: inherit;
+a:visited,
+a:hover,
+a:link:hover,
+a:visited:hover {
 	text-decoration: none;
-	color: inherit;
-	&:hover {
-		text-decoration: none;
-	}
 }
 
 aside,
